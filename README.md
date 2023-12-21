@@ -55,35 +55,35 @@ The entire dataset consists of 3,096 MRI images, providing a comprehensive view 
 
 To run the Enhanced MRI Brain Tumor Classification Web App on your local machine, follow these steps:  
 
-- 1️⃣ **Clone the Repository**: Begin by cloning the project repository to your local machine using the command:
-       ```bash
-       git clone https://github.com/FarzadNekouee/Enhanced_MRI_Tumor_Classification_Web_App.git
-       ```
+1. **Clone the Repository**: Begin by cloning the project repository to your local machine using the command:
+    ```bash
+    git clone https://github.com/FarzadNekouee/Enhanced_MRI_Tumor_Classification_Web_App.git
+    ```
 
-- 2️⃣ **Navigate to the Project Directory**: Change into the project directory:
-       ```bash
-       cd Enhanced_MRI_Tumor_Classification_Web_App
-       ```
+2. **Navigate to the Project Directory**: Change into the project directory:
+    ```bash
+    cd Enhanced_MRI_Tumor_Classification_Web_App
+    ```
 
-- 3️⃣ **Download the Pre-trained Model**: The pre-trained model is available on Google Drive. Download it by clicking [here](https://drive.google.com/file/d/1YAYTEHoAS0xkPjw_IJpvxsngHjyd5ST6/view?usp=sharing) and place it in the `model` directory within the cloned repository.
+3. **Download the Pre-trained Model**: The pre-trained model is available on Google Drive. Download it by clicking [here](https://drive.google.com/file/d/1YAYTEHoAS0xkPjw_IJpvxsngHjyd5ST6/view?usp=sharing) and place it in the `model` directory within the cloned repository.
 
-- 4️⃣ **Prepare Docker Environment**: Verify that Docker is operational on your machine. To construct the Docker image for the app, execute the following command in your project directory:
-       ```bash
-       docker build -t mri-tumor-streamlit-app .
-       ```
-    In case you face any issues with Docker Hub access, such as a '403 Forbidden' error, first pull the base Python image using this command:
-       ```bash
-       docker pull python:3.9-slim
-       ```
-    Once the base image is successfully pulled, retry building the app image.
+4. **Prepare Docker Environment**: Verify that Docker is operational on your machine. To construct the Docker image for the app, execute the following command in your project directory:
+    ```bash
+    docker build -t mri-tumor-streamlit-app .
+    ```
+   In case you face any issues with Docker Hub access, such as a '403 Forbidden' error, first pull the base Python image using this command:
+    ```bash
+    docker pull python:3.9-slim
+    ```
+   Once the base image is successfully pulled, retry building the app image.
     
-- 5️⃣ **Run the Streamlit App**: Start the Streamlit app in a Docker container by executing the following command:
-       ```bash
-       docker run -p 8080:8080 mri-tumor-streamlit-app
-       ```
+5. **Run the Streamlit App**: Start the Streamlit app in a Docker container by executing the following command:
+    ```bash
+    docker run -p 8080:8080 mri-tumor-streamlit-app
+    ```
     Note: Replace `8080` with your preferred port if necessary.
 
-- 6️⃣ **Access the Web App**: Open your web browser and visit `http://localhost:8080` to interact with the MRI Brain Tumor Classification Web App. A demo of the app in action is available below:
+6. **Access the Web App**: Open your web browser and visit `http://localhost:8080` to interact with the MRI Brain Tumor Classification Web App. A demo of the app in action is available below:
 
 
 ![Web App Demo](demo.gif)
